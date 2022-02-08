@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    
     tools {
       maven 'Maven_3.5.4'
     }
