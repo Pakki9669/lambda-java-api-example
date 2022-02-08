@@ -3,8 +3,8 @@ pipeline {
     stages {
         stage('Compile'){
             steps{
-                def jdkTool= tool 'jdk8'
-                def mvnTool= tool 'Maven 3.3.9'
+               // def jdkTool= tool 'jdk8'
+                //def mvnTool= tool 'Maven 3.3.9'
                 sh script: 'mvn clean -U install compile'
             }
         } 
