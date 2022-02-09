@@ -3,6 +3,7 @@ pipeline {
     tools {
         maven 'Maven_3.5.4'
     }
+    stages {
         stage('Compile'){
             steps{
                // def jdkTool= tool 'jdk8'
@@ -16,4 +17,5 @@ pipeline {
             }
         }
     }
+}
 
