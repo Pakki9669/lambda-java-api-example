@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    stages {
+    tools {
+        maven 'Maven_3.5.4'
+    }
         stage('Compile'){
             steps{
                // def jdkTool= tool 'jdk8'
