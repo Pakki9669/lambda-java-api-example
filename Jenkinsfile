@@ -9,6 +9,10 @@ pipeline {
                sh   'mvn clean compile'
   
             }
+            stage('build') {
+            steps {
+                echo "Hello World!"
+            }
         }
        
          
